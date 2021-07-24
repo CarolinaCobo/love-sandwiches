@@ -149,9 +149,12 @@ def main():
 print("Welcome to Love Sandwiches data automation.\n")
 stock_data = main()
 
-# Write you code below this comment
 
 def get_stock_values(data):
+    """
+    Return the stock value for every type of sandwich
+    """
+
     headings = SHEET.worksheet("stock").row_values(1)
 
     new_values = {}
